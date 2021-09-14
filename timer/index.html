@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>jv</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu">
+    <script type="text/javascript" src="jquery-latest.js"></script>
+    <script type="text/javascript" src="jquery.plugin.js"></script>
+    <script type="text/javascript" src="jquery.countdown.js"></script>
+    <script type="text/javascript" src="jquery.cookie.js"></script>
+    <script type="text/javascript" src="moment.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+
+            // Check if date has been passed:
+           var checkIfExpiedOnLoad = setInterval(function(){
+                console.log( $(".countdown-amount").text() );
+
+                if( $(".countdown-amount").text() == "0000" ){
+                    // run onexpirey fn
+                    liftOff();
+                    clearInterval(checkIfExpiedOnLoad);
+                } else {
+                    clearInterval(checkIfExpiedOnLoad);
+                }
+
+            }, 500);
+            
+                var dateGo = new Date('12/5/2016 22:59:00');
+
+                function liftOff() { 
+                $(".scarcitybuilder",top.document).css("display","none");
+                 }
+
+            $('#timesCountdown').countdown({
+                until: dateGo, 
+                format: 'DHMS',
+                onExpiry: liftOff, 
+                timezone: -5.0,
+                //labels: ['Years', 'Months', 'Weeks', 'Days', ' Hours', ' Minutes', ' Seconds'] 
+            }); 
+ 
+        });
+    </script>
+    <style type="text/css">
+body { background: none; color: #444; font: normal 16px "Ubuntu", sans-serif; margin: 0; }
+
+ul.countdown { list-style: none; margin: 0 0; padding: 0; display: block; text-align: center; }
+
+ul.countdown li { display: inline-block; margin: 0 5px; padding:3px 5px 5px 5px; background: #eee; border: 2px solid #ccc; border-radius: 10px; width: 90px; }
+
+ul.countdown li span { font-size: 40px; font-weight: 300; line-height: 40px; }
+
+ul.countdown li p { opacity: .9; font-size: 17px; padding: 0; margin: 0; }
+
+#expired { padding: 15px; text-align: center; border-radius: 10px; }
+
+ul.countdown li, #expired { background: #A9E2F6; border: 3px solid #80C7E0; color: #487686; }
+
+/*small*/
+
+ul.countdown li { width: 60px; }
+
+ul.countdown li span { font-size: 30px; line-height: 30px; }
+
+ul.countdown li p { font-size: 12px; }
+
+a { color: #76949F; text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+.source { width: 405px; margin: 0 auto; background: #4f5861; color: #a7abb1; font-weight: bold; display: block; white-space: pre; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+
+.btn { background: #f56c4c; margin: 40px auto; padding: 12px; display: block; width: 100px; color: white; text-align: center; text-transform: uppercase; font-weight: bold; text-decoration: none; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; }
+
+.btn:hover { text-decoration: none; opacity: .7; }
+</style>
+    </head>
+    <body>
+<ul id="timesCountdown" class="countdown">
+      <span class="countdown-row countdown-show7">
+  <li>
+        <div class="countdown-section"> <span class="countdown-amount">4</span>
+      <p class="countdown-period">Days</p>
+    </div>
+      </li>
+  <li>
+        <div class="countdown-section"> <span class="countdown-amount">9</span>
+      <p class="countdown-period">Hours</p>
+    </div>
+      </li>
+  <li>
+        <div class="countdown-section"> <span class="countdown-amount">55</span>
+      <p class="countdown-period">Minutes</p>
+    </div>
+      </li>
+  <li>
+        <div class="countdown-section"> <span class="countdown-amount">38</span>
+      <p class="countdown-period">Seconds</p>
+    </div>
+      </li>
+  </span>
+    </ul>
+<div id="expired" style="display: none"> </div>
+</body>
+</html>

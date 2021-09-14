@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)https://BoltPublisher.com/terms -->
+<html class="gr__BoltPublisher_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--META-DESCRIPTION-->
+    <!--META-KEYWORDS-->
+    <title>BoltPublisher - Terms of Use</title>
+    <!--pageMeta-->
+    <!-- Loading Bootstrap -->
+    <script type="text/javascript" src="./terms_files/bff4a1bc40"></script><script src="./terms_files/nr-918.min.js"></script><script type="text/javascript" async="" src="./terms_files/ga.js"></script><script async="" src="./terms_files/cloudflare.min.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(14),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,-1!==o.indexOf("dev")&&(s.dev=!0),-1!==o.indexOf("nr_dev")&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f?f.apply(this,a(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(15),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7);t("loader").features.stn=!0,t(6);var c=NREUM.o.EV;o.on("fn-start",function(t,e){var n=t[0];n instanceof c&&(this.bstStart=Date.now())}),o.on("fn-end",function(t,e){var n=t[0];n instanceof c&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),s.on("fn-start",function(){this.bstStart=Date.now()}),s.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on("pushState-start",function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on("pushState-end",function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.clearResourceTimings?window.performance.addEventListener("resourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1):window.performance.addEventListener("webkitresourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1)),document.addEventListener("scroll",r,!1),document.addEventListener("keypress",r,!1),document.addEventListener("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(16)(a),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on(d+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(16)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(16)(r);e.exports=r,o.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(16)(i);e.exports=i,a.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),a.inPlace(window,["setInterval"],"setInterval-"),a.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),i.on("setInterval-start",r),i.on("setTimer-start",o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,v,"fn-",s)}function i(t){w.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<w.length;t++)r([],w[t]);w.length&&(w=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(16)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],w=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;l>r;r++)t.removeEventListener(d[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return i(r)}function i(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}function a(t,e){var n=f(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(11),u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(13),m=window.XMLHttpRequest;s.features.xhr=!0,t(9),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,h&&(h>34||10>h)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},a(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var a=i(r);a&&(n.txSize=a)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;l>s;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(t,e){return function(){o(t,[(new Date).getTime()].concat(a(arguments)),null,e)}}var o=t("handle"),i=t(14),a=t(15);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var s=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(s,function(t,e){newrelic[e]=r(f+e,"api")}),i(c,function(t,e){newrelic[e]=r(f+e)}),e.exports=newrelic,newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),o("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],14:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],15:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],16:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(15),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;s>c;c++)a[c].apply(i,r);var u=f[v[n]];return u&&u.push([w,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",v[n]=e,e in f||(f[e]=[])})}var m={},v={},w={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return w}function i(){return new r}var a="nr@context",s=t("gos"),c=t(14),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!m++){var t=h.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(l,function(e,n){t[e]||(t[e]=n)});var n="https"===d.split(":")[0]||t.sslForHttp;h.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=h.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(14),f=window,u=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(12);var d=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},p=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),h=e.exports={offset:a(),origin:d,features:{},xhrWrappable:p};u.addEventListener?(u.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(u.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),s("mark",["firstbyte",a()],null,"api");var m=0},{}]},{},["loader",2,10,4,3]);;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"bff4a1bc40",applicationID:"19146991",sa:1,agent:"js-agent.newrelic.com/nr-918.min.js"}</script><script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"36f81bf4fcec7eaef0b601b597c98c41",petok:"6dce729b77bdc431736d44a781884496cedfff25-1478014216-1800",zone:"BoltPublisher.com",rocket:"0",apps:{"ga_key":{"ua":"UA-79290608-1","ga_bs":"2"}}}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=088620b277/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<link href="./terms_files/bootstrap.css" rel="stylesheet">
+    <!-- Loading Elements Styles -->
+    <link href="./terms_files/style.css" rel="stylesheet">
+    <!-- Loading Magnific-Popup Styles -->
+    <link href="./terms_files/magnific-popup.css" rel="stylesheet">
+    <!-- Loading Font Styles -->
+    <link href="./terms_files/iconfont-style.css" rel="stylesheet">
+    <!-- WOW Animate-->
+    <link href="./terms_files/animate.css" rel="stylesheet">
+    <!-- Datepicker Styles -->
+    <link href="./terms_files/bootstrap-datepicker3.min.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="icon" href="https://i.imgur.com/PoMInM6.png">
+    <link rel="apple-touch-icon" href="https://i.imgur.com/PoMInM6.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://i.imgur.com/PoMInM6.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://i.imgur.com/PoMInM6.png">
+    <!--CUSTOM-JS-->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="scripts/html5shiv.js"></script>
+      <script src="scripts/respond.min.js"></script>
+    <![endif]-->
+    <!--headerIncludes-->
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-79290608-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+</script><style type="text/css">.cf-hidden { display: none; } .cf-invisible { visibility: hidden; }</style>
+</head>
+
+<body data-spy="scroll" data-target=".navMenuCollapse" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+    <!--PRELOADER-->
+    <div id="wrap">
+    <!-- NAVIGATION CENTER -->
+		<!-- TEXT 1COL BLOCK -->
+		<!-- FOOTER DARK -->
+		<!-- NAVIGATION CENTER -->
+		<!-- TEXT 1COL BLOCK -->
+		<!-- FOOTER DARK -->
+		<!-- NAVIGATION CENTER -->
+		<nav class="navbar navbar-center bg-color1 dark-bg">
+			<div class="container">
+				<button class="round-toggle navbar-toggle menu-collapse-btn collapsed" data-toggle="collapse" data-target=".navMenuCollapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<div class="row no-dev">
+					<div class="collapse navbar-collapse navMenuCollapse">
+						<div class="col-md-5 text-right">
+							<ul class="nav">
+								
+								
+								
+							</ul>
+						</div>
+						<div class="col-md-2 text-center hidden-sm hidden-xs"><a class="navbar-brand goto" href="https://BoltPublisher.com/"><img src="./terms_files/logo.png" height="40" alt="BoltPublisher logo"></a></div>
+						<div class="col-md-5 text-left">
+							<ul class="nav">
+								
+								
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav><!-- TEXT 1COL BLOCK -->
+		<section id="text-1col" src="./images/logo.png" style="padding-top: 50px; padding-bottom: 50px; border-bottom-width: 1px; border-bottom-color: rgb(232, 232, 232); background-attachment: scroll; background-color: rgb(255, 255, 255); background-size: auto; background-repeat: repeat;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 editContent"><h2>BoltPublisher Terms of Use</h2>
+<h4 class="sub-title">PLEASE READ</h4>
+<p class="p1">
+	<span class="s1">BoltPublisher.COM REQUIRES CONSIDERATION FOR AND AS A CONDITION OF ALLOWING YOU ACCESS. READING AND ACCEPTING THE TERMS OF USE AND READING AND ACCEPTING THE PROVISIONS OF THE PRIVACY POLICY OF  BoltPublisher.COM ARE REQUIRED CONSIDERATIONS FOR BoltPublisher.COM GRANTING YOU THE RIGHT TO VISIT, READ OR INTERACT WITH IT. ALL PERSONS ARE DENIED ACCESS TO THIS SITE UNLESS THEY READ AND ACCEPT THE TERMS OF USE AND THE PRIVACY POLICY. BY VIEWING, VISITING, USING, OR INTERACTING WITH  BoltPublisher.COM OR WITH ANY BANNER, POP-UP, OR ADVERTISING THAT APPEARS ON IT, YOU ARE AGREEING TO ALL THE PROVISIONS OF THIS TERMS OF USE POLICY AND THE PRIVACY POLICY OF  BoltPublisher.COM. ALL PERSONS UNDER THE AGE OF 18 ARE DENIED ACCESS TO  BoltPublisher.COM. IF YOU ARE UNDER 18 YEARS OF AGE, IT IS UNLAWFUL FOR YOU TO VISIT, READ, OR INTERACT WITH  BoltPublisher.COM OR ITS CONTENTS IN ANY MANNER.  BoltPublisher.COM SPECIFICALLY DENIES ACCESS TO ANY INDIVIDUAL THAT IS COVERED BY THE CHILD ONLINE PRIVACY ACT (COPA) OF 1998.  BoltPublisher.COM RESERVES THE RIGHT TO DENY ACCESS TO ANY PERSON OR VIEWER FOR ANY REASON. UNDER THE TERMS OF THE PRIVACY POLICY, WHICH YOU ACCEPT AS A CONDITION FOR VIEWING,  BoltPublisher.COM IS ALLOWED TO COLLECT AND STORE DATA AND INFORMATION FOR THE PURPOSE OF EXCLUSION AND FOR MANY OTHER USES. THE TERMS OF USE AGREEMENT MAY CHANGE FROM TIME TO TIME. VISITORS HAVE AN AFFIRMATIVE DUTY, AS PART OF THE CONSIDERATION FOR PERMISSION TO VIEW  BoltPublisher.COM, TO KEEP THEMSELVES INFORMED OF CHANGES. PARTIES TO THE TERMS OF USE AGREEMENT Visitors, viewers, users, subscribers, members, affiliates, or customers, collectively referred to herein as “Visitors," are parties to this agreement. The website and its owners and/or operators are parties to this agreement, herein referred to as “Website." </span>
+</p>
+<p class="p2">
+	<span class="s1"></span><br>
+</p>
+<p class="p1">
+	<span class="s1">USE OF INFORMATION FROM THIS WEBSITE Unless you have entered into an express written contract with this website to the contrary, visitors, viewers, subscribers, members, affiliates, or customers have no right to use this information in a commercial or public setting; they have no right to broadcast it, copy it, save it, print it, sell it, or publish any portions of the content of this website. By viewing the contents of this website you agree this condition of viewing and you acknowledge that any unauthorized use is unlawful and may subject you to civil or criminal penalties. Again, Visitor has no rights whatsoever to use the content of, or portions thereof, including its databases, invisible pages, linked pages, underlying code, or other intellectual property the site may contain, for any reason for any use whatsoever. Nothing. Visitor agrees to liquidated damages in the amount of U.S.$100,000 in addition to costs and actual damages for breach of this provision. Visitor warrants that he or she understands that accepting this provision is a condition of viewing and that viewing constitutes acceptance. </span>
+</p>
+<p class="p2">
+	<span class="s1"></span><br>
+</p>
+<p class="p3">
+	<span class="s2">OWNERSHIP OF WEBSITE OR RIGHT TO USE, SELL, PUBLISH CONTENTS OF THIS WEBSITE The website and its contents are owned or licensed by the website. Material contained on the website must be presumed to be proprietary and copyrighted. Visitors have no rights whatsoever in the site content. Use of website content for any reason is unlawful unless it is done with express contract or permission of the website. </span>
+</p>
+<p class="p2">
+	<span class="s1"></span><br>
+</p>
+<p class="p3">
+	<span class="s2">HYPERLINKING TO SITE, CO-BRANDING, “FRAMING" AND REFERENCING SITE PROHIBITED Unless expressly authorized by website, no one may hyperlink this site, or portions thereof, (including, but not limited to, logotypes, trademarks, branding or copyrighted material) to theirs for any reason. Further, you are not allowed to reference the url (website address) of this website in any commercial or non-commercial media without express permission, nor are you allowed to 'frame' the site. You specifically agree to cooperate with the Website to remove or de-activate any such activities and be liable for all damages. You hereby agree to liquidated damages of US $100,000.00 plus costs and actual damages for violating this provision. </span>
+</p>
+<p class="p2">
+	<span class="s1"></span><br>
+</p>
+<p class="p3">
+	<span class="s2">DISCLAIMER FOR CONTENTS OF SITE The website disclaims any responsibility for the accuracy of the content of this website. Visitors assume the all risk of viewing, reading, using, or relying upon this information. Unless you have otherwise formed an express contract to the contrary with the website, you have no right to rely on any information contained herein as accurate. The website makes no such warranty. </span>
+</p>
+<p class="p2">
+	<span class="s1"></span><br>
+</p>
+<p class="p3">
+	<span class="s2">DISCLAIMER FOR HARM CAUSED TO YOUR COMPUTER OR SOFTWARE FROM INTERACTING WITH THIS WEBSITE OR ITS CONTENTS. VISITOR ASSUMES ALL RISK OF VIRUSES, WORMS, OR OTHER CORRUPTING FACTORS. The website assumes no responsibility for damage to computers or software of the visitor or any person the visitor subsequently communicates with from corrupting code or data that is inadvertently passed to the visitor's computer. Again, visitor views and interacts with this site, or banners or pop-ups or advertising displayed thereon, at his own risk. DISCLAIMER FOR HARM CAUSED BY DOWNLOADS Visitor downloads information from this site at his own risk. Website makes no warranty that downloads are free of corrupting computer codes, including, but not limited to, viruses and worms. </span>
+</p>
+<p class="p2">
+	<span class="s1"></span><br>
+</p>
+<p class="p3">
+	<span class="s2">LIMITATION OF LIABILITY By viewing, using, or interacting in any manner with this site, including banners, advertising, or pop-ups, downloads, and as a condition of the website to allow his lawful viewing, Visitor forever waives all right to claims of damage of any and all description based on any causal factor resulting in any possible harm, no matter how heinous or extensive, whether physical or emotional, foreseeable or unforeseeable, whether personal or business in nature. </span>
+</p>
+<p class="p2">
+	<span class="s1"></span><br>
+</p>
+<p class="p1">
+	<span class="s1">INDEMNIFICATION Visitor agrees that in the event he causes damage, which the Website is required to pay for, the Visitor, as a condition of viewing, promises to reimburse the Website for all. SUBMISSIONS Visitor agrees as a condition of viewing, that any communication between Visitor and Website is deemed a submission. All submissions, including portions thereof, graphics contained thereon, or any of the content of the submission, shall become the exclusive property of the Website and may be used, without further permission, for commercial use without additional consideration of any kind. Visitor agrees to only communicate that information to the Website, which it wishes to forever allow the Website to use in any manner as it sees fit. “Submissions" is also a provision of the Privacy Policy. NOTICE No additional notice of any kind for any reason is due Visitor and Visitor expressly warrants an understanding that the right to notice is waived as a condition for permission to view or interact with the website. </span>
+</p>
+<p class="p2">
+	<span class="s1"></span><br>
+</p>
+<p class="p1">
+	<span class="s1">DISPUTES As part of the consideration that the Website requires for viewing, using or interacting with this website, Visitor agrees to use binding arbitration for any claim, dispute, or controversy (“CLAIM") of any kind (whether in contract, tort or otherwise) arising out of or relating to this purchase, this product, including solicitation issues, privacy issues, and terms of use issues. Arbitration shall be conducted pursuant to the rules of the American Arbitration Association which are in effect on the date a dispute is submitted to the American Arbitration Association. Information about the American Arbitration Association, its rules, and its forms are available from the American Arbitration Association, 335 Madison Avenue, Floor 10, New York, New York, 10017-4605. Hearing will take place in the city or county of the Seller. In no case shall the viewer, visitor, member, subscriber or customer have the right to go to court or have a jury trial. Viewer, visitor, member, subscriber or customer will not have the right to engage in pre-trial discovery except as provided in the rules; you will not have the right to participate as a representative or member of any class of claimants pertaining to any claim subject to arbitration; the arbitrator's decision will be final and binding with limited rights of appeal. The prevailing party shall be reimbursed by the other party for any and all costs associated with the dispute arbitration, including attorney fees, collection fees, investigation fees, travel expenses. </span>
+</p>
+<p class="p3">
+	<span class="s2">JURISDICTION AND VENUE If any matter concerning this purchase shall be brought before a court of law, pre- or post-arbitration, Viewer, visitor, member, subscriber or customer agrees to that the sole and proper jurisdiction to be the state and city declared in the contact information of the web owner unless otherwise here specified. In the event that litigation is in a federal court, the proper court shall be the closest federal court to the Seller's address. APPLICABLE LAW Viewer, visitor, member, subscriber or customer agrees that the applicable law to be applied shall, in all cases, be that of the state of the Seller. </span>
+</p>
+<p class="p3">
+	<span class="s2">CONTACT INFORMATION The Seller of this product is: </span>
+</p>
+<p class="p3">
+	<span class="s2">BoltPublisher</span>
+</p>
+                        
+<p class="p3">
+	<span class="s2">Contact Email: support@BoltPublisher.freshdesk.com</span>
+</p>
+<p>
+	All Rights Reserved.
+	<br>
+</p></div>
+				</div>
+			</div>
+		</section><!-- FOOTER DARK -->
+				<!-- NAVIGATION CENTER -->
+		<nav class="navbar navbar-center bg-color1 dark-bg">
+			<div class="container">
+				<button class="round-toggle navbar-toggle menu-collapse-btn collapsed" data-toggle="collapse" data-target=".navMenuCollapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<div class="row no-dev">
+					<div class="collapse navbar-collapse navMenuCollapse">
+						<div class="col-md-5 text-right">
+							<ul class="nav">
+								
+								
+								
+							</ul>
+						</div>
+						<div class="col-md-2 text-center hidden-sm hidden-xs"><a class="navbar-brand goto" href="https://BoltPublisher.com/"><img src="./terms_files/footer-logo.png" height="40" alt="BoltPublisher logo"></a><ul>© 2016 BoltPublisher</ul></div>
+						<div class="col-md-5 text-left">
+							<ul class="nav">
+								
+								
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		</div>
+    <!-- /#wrap -->
+    <!-- JavaScript -->
+    <script src="./terms_files/jquery-1.11.2.min.js"></script>
+    <script src="./terms_files/bootstrap.min.js"></script>
+    <script src="./terms_files/jquery.validate.min.js"></script>
+    <script src="./terms_files/smoothscroll.js"></script>
+    <script src="./terms_files/jquery.smooth-scroll.min.js"></script>
+    <script src="./terms_files/placeholders.jquery.min.js"></script>
+    <script src="./terms_files/jquery.magnific-popup.min.js"></script>
+    <script src="./terms_files/jquery.counterup.min.js"></script>
+    <script src="./terms_files/waypoints.min.js"></script>
+    <script src="./terms_files/video.js"></script>
+    <script src="./terms_files/bigvideo.js"></script>
+    <script src="./terms_files/wow.min.js"></script>
+    <script src="./terms_files/jquery.jCounter-0.1.4.js"></script>
+    <script src="./terms_files/bootstrap-datepicker.min.js"></script>
+    <script src="./terms_files/audio.min.js"></script>
+    <script src="./terms_files/goodshare.min.js"></script>
+    <script src="./terms_files/custom.js"></script>
+
+
+</body></html>
